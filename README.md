@@ -111,7 +111,7 @@ You will clone the GitHub repository prepared by your instructor.
 
 ### Why?
 
-PixelFed installation files, docker-compose.yaml, and .env.production template are ready in this repo. **Also includes automatic setup script!**
+PixelFed installation files, .yaml, and .env.production template are ready in this repo. **Also includes automatic setup script!**
 
 ### Repository Address
 
@@ -189,13 +189,13 @@ PixelFed isn't a single application, it's an orchestration of multiple services:
 
 ### How?
 
-- Start with docker-compose up -d command
+- Start with docker compose up -d command
 - -d: detached mode (run in background)
 - Wait 2-3 minutes (first startup is long)
 
 ### Status Check
 
-Check with docker-compose ps.
+Check with docker compose ps.
 
 **Should see:**
 - pixelfed-web: Up
@@ -234,7 +234,7 @@ You need a user to log into PixelFed. The first user will be admin.
 
 Single command:
 ```bash
-sudo docker-compose exec web php artisan user:create
+sudo docker compose exec web php artisan user:create
 ```
 
 ### What to Enter
